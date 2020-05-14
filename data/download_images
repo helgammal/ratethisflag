@@ -1,0 +1,123 @@
+#!/bin/bash
+
+usage()
+{
+   echo ""
+   echo "Usage: $0 /some/directory/path"
+   echo -e "This script downloads 101 images of U.S. city flag from Wikimedia"
+   echo -e "to a directory on your machine. It relies on:"
+   echo -e "\t1. python-2.7 environment."   
+   echo -e "\t2. download_from_wikimedia_commons being installed"
+   echo -e "Parameters:"
+   echo -e "\tdirectory to store the images."
+   exit 1
+}
+
+
+if [ -z "$1" ]
+then
+   usage
+fi
+
+download_from_wikimedia_commons Municipal_Flag_of_Chicago.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Cincinnati,_Ohio.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Cleveland,_Ohio.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Columbus,_Ohio.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Des_Moines,_Iowa.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Detroit,_Michigan.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Indianapolis.svg --output $output_dir --width 480
+download_from_wikimedia_commons File:Flag_of_Kansas_City,_Missouri.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Madison,_Wisconsin.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Milwaukee,_Wisconsin.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Minneapolis,_Minnesota.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons PLFD_fahne.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_St._Paul,_Minnesota.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Sioux_Falls,_South_Dakota.svg --output $output_dir --width 480
+download_from_wikimedia_commons South_Bend_Flag.png --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Springfield,_Illinois.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_St._Louis,_Missouri.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Toledo,_Ohio.svg --output $output_dir --width 480
+download_from_wikimedia_commons VincennesFlag.png --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Wichita,_Kansas.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Albany,_New_York.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Baltimore_City.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Boston.svg --output $output_dir --width 480
+download_from_wikimedia_commons Bridgeport_flag.png --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Buffalo,_New_York.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Cumberland_Head.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Easton,_Pennsylvania.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Erie,_Pennsylvania.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_New_York_City.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Newark,_New_Jersey.jpg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Ocean_City,_Maryland.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Philadelphia,_Pennsylvania.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Pittsburgh,_Pennsylvania.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Taunton,_Massachusetts.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Trenton,_New_Jersey.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Portland,_Oregon.svg --output $output_dir --width 480
+download_from_wikimedia_commons City_of_Asheville_North_Carolina_Flag.jpg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Atlanta.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Baton_Rouge.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Benbrook,_Texas.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Birmingham,_Alabama.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Carrollton,_Texas.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Charleston,_South_Carolina.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Corpus_Christi,_Texas.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Dallas.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Denison,_Texas.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Durham,_North_Carolina.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_El_Paso,_Texas.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Houston,_Texas.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Jackson,_Mississippi.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Jacksonville,_Florida.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Key_West,_Florida.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Little_Rock.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Memphis,_Tennessee.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Miami,_Florida.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Mobile,_Alabama.png --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Montgomery,_Alabama.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_New_Orleans,_Louisiana.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Orlando,_Florida.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Raleigh.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_St._Petersburg,_Florida.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Savannah,_Georgia.png --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Tampa,_Florida.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Albuquerque,_New_Mexico.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Tucson,_Arizona.png --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Anchorage,_Alaska.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Colorado_Springs,_Colorado.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Denver,_Colorado.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Honolulu,_Hawaii.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Las_Vegas,_Nevada.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Los_Angeles,_California.svg --output $output_dir --width 480
+download_from_wikimedia_commons City_of_Moreno_Valley_CA_Flag.jpg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Monterey,_California.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Oakland,_California.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Provo,_Utah.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Reno,_Nevada.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Roswell,_New_Mexico.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Sacramento,_California.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_San_Diego,_California.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_None.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_San_Francisco.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_San_José,_California.svg --output $output_dir --width 480
+download_from_wikimedia_commons Flag_of_Westminster,_Colorado.gif --output $output_dir --width 480
+download_from_wikimedia_commons Flag_san_juan_pr.svg --output $output_dir --width 480
